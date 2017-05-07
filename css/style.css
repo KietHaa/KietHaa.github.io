@@ -24,6 +24,10 @@ body {
     float: right;
 }
 
-.content-right {
-  margin-left: 50px;
+.menu-fix {
+  width: 25%;
+}
+
+noidung-phai {
+  width: 50%;
 }
