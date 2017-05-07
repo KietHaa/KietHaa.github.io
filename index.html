@@ -72,6 +72,25 @@
                       <p style="margin-top: 20px">Có 2 file 2 cài đặt tương ứng với 32-bit và 64-bit</p>
                       <p>Khi dùng file .zip thì nên giải nén vào thư mục C:\Go</p>
                       <h4><b>Thiết lập biến môi trường (environment variables):</b></h4>
+                      <ul>
+                        <li>Khi dùng file .msi để cài đặt thì việc thiết lập biến môi trường được thực hiện tự động</li>
+                        <li>Khi dùng file .zip thì cần vào control panel -> system -> advanced system settings -> vào tab advanced -> environment variables -> new -> browse directory -> đi đến add thư mục bin trong C:\Go\bin</li>
+                      </ul>
+                      <h4><b>Kiểm tra cài đặt:</b></h4>
+                      <ul>
+                        <li>Dùng cmd tạo thư mục %USERPROFILE%\go</li>
+                        <li>Tạo tiếp thư mục con src/hello trong go</li>
+                        <li>Code demo trong hello.go</li>
+                      </ul>
+                      <img style="width: 70%" src="images/image4.jpg" alt="Cài đặt Go">
+                      <ul style="margin-top: 20px">
+                        <li>Build bằng go tool</li>
+                      </ul>
+                      <img style="width: 70%" src="images/image5.jpg" alt="Cài đặt Go">
+                      <ul style="margin-top: 20px">
+                        <li>Kết quả: hello world</li>
+                      </ul>
+                      <h4><b>Gỡ cài đặt Go:</b></h4>
                     </div>
                 </div>
                 <!--Set up GOPATH-->
