@@ -91,6 +91,9 @@
                         <li>Kết quả: hello world</li>
                       </ul>
                       <h4><b>Gỡ cài đặt Go:</b></h4>
+                      <ul>
+                        <li>Xóa thư mục go tại địa chỉ C:\Go</li>
+                      </ul>
                     </div>
                 </div>
                 <!--Set up GOPATH-->
@@ -99,7 +102,12 @@
                         <h3 id="GOPATH" class="panel-title">Set up GOPATH</h3>
                     </div>
                     <div class="panel-body">
-                        ...
+                    <p>GOPATH là thư mục chứa tất cả code.</p>
+                    <ul>
+                      <li>Tạo ra thư mục mkdir ~/gocode</li>
+                      <li>Đặt thư mục này như là Gopath trong Go: export GOPATH=~/gocode</li>
+                      <li>Lưu GOPATH: echo export GOPATH=$GOPATH >> ~/.bash_profile</li>
+                    </ul>
                     </div>
                 </div>
                 <!--Modules-->
@@ -108,7 +116,10 @@
                         <h3 id="Modules" class="panel-title">Modules</h3>
                     </div>
                     <div class="panel-body">
-                        ...
+                    <p>Để thêm một module vào ứng dụng, hãy thêm dòng này vào conf/app.conf</p>
+                    <img src="images/Thêm module.jpg" alt="Modules">
+                    <p style="margin-top: 20px">Để tắt module, nhập đường dẫn trống</p>
+                    <img src="images/Tắt module.jpg" alt="Modules">
                     </div>
                 </div>
                 <!--Controllers-->
