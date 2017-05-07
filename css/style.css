@@ -23,3 +23,7 @@ body {
     margin-right: 120px;
     float: right;
 }
+
+.content-right {
+  margin-left: 50px;
+}
