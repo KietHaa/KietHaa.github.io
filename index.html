@@ -120,6 +120,20 @@
                     <img src="images/Thêm module.jpg" alt="Modules">
                     <p style="margin-top: 20px">Để tắt module, nhập đường dẫn trống</p>
                     <img src="images/Tắt module.jpg" alt="Modules">
+                    <p style="margin-top: 20px">Ví dụ, để bật module test runner</p>
+                    <img src="images/bật module test runner.jpg" alt="Modules">
+                    <h4><b>Module Jobs</b></h4>
+                    <p>Thực hiện công việc không đồng bộ bên ngoài luồng yêu cầu<br>Chẳng hạn như:</p>
+                    <ul>
+                      <li>Một công việc định kì, ví dụ cập nhật ticker 5 phút một lần</li>
+                      <li>-	Một công việc thực hiện một lần, ví dụ như gửi email hoặc cập nhật thông tin</li>
+                    </ul>
+                    <p><b>Cấu hình:</b></p>
+                    <p>Thêm module.jobs vào file app.conf</p>
+                    <img src="images/thêm module jobs.jpg" alt="Modules">
+                    <p style="margin-top: 20px">Để chạy một tác vụ khởi động ứng dụng, sử dụng revel.OnAppStart () để đăng ký một chức năng. Revel chạy các nhiệm vụ này một cách liên tục, trước khi bắt đầu máy chủ. Lưu ý rằng chức năng này không thực sự sử dụng mô-đun công việc, nhưng nó có thể được sử dụng để gửi một công việc để thực hiện mà không ngăn chặn khởi động máy chủ.</p>
+                    <h4><b>Module Testing</b></h4>
+                    <p>Revel cung cấp framework testing để dễ dàng viết và chạy kiểm tra chức năng của một ứng dụng.<br>Các chức năng thử nghiệm cần đặt trong thư mục tests/</p>
                     </div>
                 </div>
                 <!--Controllers-->
@@ -128,7 +142,22 @@
                         <h3 id="Controllers" class="panel-title">Controllers</h3>
                     </div>
                     <div class="panel-body">
-                        ...
+                    <p>revel.Controller dùng trong xử lý một yêu cầu và điều khiển:</p>
+                    <ul>
+                      <li>Các yêu cầu được gửi đến</li>
+                      <li>Đáp ứng lại bằng Html, Json, Xml,...</li>
+                    </ul>
+                    <p>Một controller luôn nhúng *revel.Controller vào đầu tiên</p>
+                    <img src="images/Controller first type.jpg" alt="Controller">
+                    <p style="margin-top: 20px">revel.Controller là context cho một yêu cầu và chứa dữ liệu Request và Response</p>
+                    <p>Dưới dây là một số thành phần được sử dụng nhiều nhất và định nghĩa type/struct để cung cấp cho Controller, Request, Params và Response</p>
+                    <img src="images/Controller1.jpg" alt="Controller">
+                    <img style="margin-top: 20px" src="images/Controller2.jpg" alt="Controller">
+                    <img style="margin-top: 20px" src="images/Controller3.jpg" alt="Controller">
+                    <img style="margin-top: 20px" src="images/Controller4.jpg" alt="Controller">
+                    <p style="margin-top: 20px"><b>URL Routing:</b></p>
+                    <p>URL’s and routes được định nghĩa trong file conf/route và có 3 cột như sau:</p>
+                    <img src="images/URL Routing.jpg" alt="Controller">
                     </div>
                 </div>
             </div>
